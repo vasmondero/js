@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button onclick="pokazTekst()">Pokaz tekst</button>
+        <p id="miejscaNaTekst"></p>
+        <img src="https://piscum.photos/200/300">
+        <button onclick="przelaczObrazek()">Pokaż / ukryj obrazek</button>
+        <script>
+        console.log("hello world");
+        function pokazTekst() {
+            document.getElementById('miejsceNaTekst').innerHTML =   
+                "Ten tekst znajdzie się w akapicie";
+
+        }
+        function przelaczObrazek() {
+            if(document.getElementById('obrazek').style.display == "block")
+                decument.getElementById('obrazek').style.display = "none";
+
+            else
+                document.getElementById('obrazek').style.display = "block"
+        }
+        </script>
+</body>
+</html>
